@@ -10,6 +10,7 @@
     <modules>
         <module>app-portal</module>
         <module>user</module>
+        <module>common</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

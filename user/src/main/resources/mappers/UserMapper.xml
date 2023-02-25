@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pbq.subject.user.mapper.UserMapper">
+  <resultMap id="userPoMap" type="com.pbq.common.po.UserPo">
+    <id column="userId" jdbcType="VARCHAR" property="userId" />
+    <result column="userName" jdbcType="VARCHAR" property="userName" />
+    <result column="realName" jdbcType="VARCHAR" property="realName" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="birthday" jdbcType="DATE" property="birthday" />
+    <result column="gender" jdbcType="VARCHAR" property="gender" />
+    <result column="roleId" jdbcType="INTEGER" property="roleId" />
+    <result column="mobile" jdbcType="VARCHAR" property="mobile" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="userRank" jdbcType="INTEGER" property="rank" />
+    <result column="deptCode" jdbcType="INTEGER" property="deptCode" />
+    <result column="failLoginTimes" jdbcType="INTEGER" property="failLoginTimes" />
+    <result column="enabled" jdbcType="VARCHAR" property="enabled" />
+    <result column="isLocked" jdbcType="VARCHAR" property="isLocked" />
+    <result column="lastLoginTime" jdbcType="TIMESTAMP" property="lastLoginTime" />
+    <result column="insertBy" jdbcType="INTEGER" property="insertBy" />
+    <result column="updateBy" jdbcType="INTEGER" property="updateBy" />
+    <result column="insertTime" jdbcType="TIMESTAMP" property="insertTime" />
+    <result column="updateTime" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="column1" jdbcType="VARCHAR" property="column1" />
+    <result column="column2" jdbcType="VARCHAR" property="column2" />
+    <result column="column3" jdbcType="VARCHAR" property="column3" />
+    <result column="column4" jdbcType="VARCHAR" property="column4" />
+    <result column="column5" jdbcType="VARCHAR" property="column5" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    userId, userName, realName, password, birthday, gender, roleId, mobile, email, userRank,
+    deptCode, failLoginTimes, enabled, isLocked, lastLoginTime, insertBy, updateBy, insertTime,
+    updateTime, column1, column2, column3, column4, column5
+  </sql>
+  <select id="getUserByUserNameAndPassword" resultMap="userPoMap">
+    SELECT
+    <include refid="Base_Column_List" />
+    from t_user
+    where userName = #{userName}
+    and password = #{password}
+    and isLocked = 'N'
+  </select>
+</mapper>

@@ -1,5 +1,6 @@
 package com.pbq.subject.portal.controller;
 
+import com.pbq.common.response.ApiResponse;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,7 +16,7 @@ public class TestController {
     public String name;
 
     @GetMapping("/getName")
-    public String getName(){
-        return name;
+    public ApiResponse getName(){
+        return ApiResponse.succ(name);
     }
 }

@@ -38,6 +38,11 @@
             <artifactId>brave-instrumentation-httpclient</artifactId>
             <version>5.12.7</version>
         </dependency>
+        <dependency>
+            <groupId>com.pbq</groupId>
+            <artifactId>common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
 </project>
