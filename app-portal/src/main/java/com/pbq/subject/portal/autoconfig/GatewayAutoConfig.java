@@ -1,13 +1,13 @@
-package com.pbq.subject.autoconfig;
+package com.pbq.subject.portal.autoconfig;
 
 import brave.Tracing;
 import brave.http.HttpTracing;
 import brave.propagation.B3Propagation;
 import brave.propagation.ExtraFieldPropagation;
 import brave.propagation.ThreadLocalCurrentTraceContext;
-import com.pbq.subject.config.GatewayConfig;
-import com.pbq.subject.servlet.GatewayProxyServlet;
-import com.pbq.subject.utils.HttpClientUtils;
+import com.pbq.subject.portal.config.GatewayConfig;
+import com.pbq.subject.portal.servlet.GatewayProxyServlet;
+import com.pbq.subject.portal.utils.HttpClientUtils;
 import org.apache.http.client.HttpClient;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;

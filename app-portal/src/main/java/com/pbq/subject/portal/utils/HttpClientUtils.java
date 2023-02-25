@@ -1,4 +1,4 @@
-package com.pbq.subject.utils;
+package com.pbq.subject.portal.utils;
 
 import brave.http.HttpTracing;
 import brave.httpclient.TracingHttpClientBuilder;

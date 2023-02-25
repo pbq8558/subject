@@ -1,3 +1,4 @@
 /app-portal/target/
+/user/target/
 /.idea/
 /*.iml

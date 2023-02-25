@@ -1,16 +1,16 @@
-package com.pbq.subject.servlet;
+package com.pbq.subject.portal.servlet;
 
 import brave.http.HttpTracing;
 import cn.hutool.core.date.DateTime;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.crypto.digest.DigestUtil;
 import cn.hutool.json.JSONUtil;
-import com.pbq.subject.component.ServiceCenter;
-import com.pbq.subject.config.GatewayConfig;
-import com.pbq.subject.context.PortalContext;
-import com.pbq.subject.po.ClientInfo;
-import com.pbq.subject.utils.HttpClientUtils;
-import com.pbq.subject.utils.WebUtil;
+import com.pbq.subject.portal.component.ServiceCenter;
+import com.pbq.subject.portal.config.GatewayConfig;
+import com.pbq.subject.portal.context.PortalContext;
+import com.pbq.subject.portal.po.ClientInfo;
+import com.pbq.subject.portal.utils.HttpClientUtils;
+import com.pbq.subject.portal.utils.WebUtil;
 import org.apache.http.Header;
 import org.apache.http.HttpHeaders;
 import org.apache.http.client.methods.*;

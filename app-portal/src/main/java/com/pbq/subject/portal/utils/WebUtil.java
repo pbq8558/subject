@@ -1,4 +1,4 @@
-package com.pbq.subject.utils;
+package com.pbq.subject.portal.utils;
 
 import cn.hutool.core.util.StrUtil;
 import org.springframework.core.env.Environment;

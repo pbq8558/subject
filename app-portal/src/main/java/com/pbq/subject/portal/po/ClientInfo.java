@@ -1,4 +1,4 @@
-package com.pbq.subject.po;
+package com.pbq.subject.portal.po;
 
 public class ClientInfo {
     private String id;

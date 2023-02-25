@@ -1,4 +1,4 @@
-package com.pbq.subject.component;
+package com.pbq.subject.portal.component;
 
 import cn.hutool.core.util.StrUtil;
 import com.alibaba.cloud.nacos.NacosDiscoveryProperties;
